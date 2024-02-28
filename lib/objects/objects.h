@@ -7,17 +7,23 @@ typedef struct registry Registry;
 
 struct car
 {
-    // TODO: Implement
+    char *brand;
+    char *model;
+    char *license;
+    Customer *customer;
 };
 
 struct customer
 {
-    // TODO: Implement
+    char *name;
+    char *address;
+    Car *car;
 };
 
 struct registry
 {
-    // TODO: Implement
+    Customer **customers;
+    int size;
 };
 
 Car *car_create(char *brand, char *model, char *license);

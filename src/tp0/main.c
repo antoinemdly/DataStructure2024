@@ -17,5 +17,7 @@ int main(int argc, char **argv)
 
     a = increase(a); // Try to hit "step-into" here, and then "step-over" to see what happens
 
-    return 0;
+    for (int i = 0; i < 10; i++){
+        a += 1;
+    }
 }
