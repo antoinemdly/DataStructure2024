@@ -3,15 +3,18 @@
 
 typedef struct stackNode
 {
-    // TODO: Implement
+    struct stackNode *next;
+    void *data;
+
 } StackNode;
 
 typedef struct stack
 {
-    // TODO: Implement
+    StackNode *first;
+    
 } Stack;
 
-Stack *stack_create();
+Stack *stack_create(); //LIFO !!!!!!!!!! (Last in First out)
 int stack_size(Stack *stack);
 void stack_push(Stack *stack, void *data);
 void *stack_pop(Stack *stack);

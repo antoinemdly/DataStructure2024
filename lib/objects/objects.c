@@ -38,7 +38,7 @@ void registry_destroy(Registry *registry){
 
 void link_car(Car *car, Customer *customer){
     customer->car = car;
-    car->customer = customer;
+    // car->customer = customer;
 }
 
 void print_registry(Registry *registry){

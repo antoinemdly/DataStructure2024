@@ -3,12 +3,15 @@
 
 typedef struct listNode
 {
-    // TODO: Implement
+    struct listNode *next;
+    void *data;
+
 } ListNode;
 
 typedef struct list
 {
-    // TODO: Implement
+    ListNode *first;
+
 } List;
 
 List *list_create();

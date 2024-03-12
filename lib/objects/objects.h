@@ -10,7 +10,7 @@ struct car
     char *brand;
     char *model;
     char *license;
-    Customer *customer;
+    // Customer *customer;
 };
 
 struct customer

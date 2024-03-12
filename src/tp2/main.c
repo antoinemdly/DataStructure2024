@@ -6,7 +6,13 @@
 
 void list_fn()
 {
-    // TODO: Implement
+    List *list = list_create();
+
+    list_append(list, (void*)1);
+    list_append(list, (void*)2);
+    list_append(list, (void*)3);
+
+    
 }
 
 void queue_fn()
