@@ -21,6 +21,9 @@
         "random": "c",
         "hash.h": "c",
         "acutest.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "__hash_table": "c",
+        "__split_buffer": "c",
+        "bitset": "c"
     }
 }

@@ -100,7 +100,7 @@ int list_indexOf(List *list, void *data){
         n++;
     }
     
-    return 0;
+    return -1;
 }
 
 void list_delete(List *list, int index){

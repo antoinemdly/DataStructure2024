@@ -5,8 +5,15 @@
 
 typedef struct graph
 {
-    // TODO: Implement
+    int size;
+    List **nodes;
 } Graph;
+
+typedef struct graphnode
+{
+    int node;
+    float weight;
+}GraphNode;
 
 Graph *graph_create(int size);
 void graph_destroy(Graph *graph);

@@ -129,10 +129,10 @@ void bfs_extra()
 
     List *list = tree_bfs(tree);
     TEST_ASSERT_(list != NULL, "List is NULL");
-    TEST_ASSERT_(list->size == 7, "List size is not 7");
+    TEST_ASSERT_(list_size(list) == 7, "List size is not 7");
 
     int expected[7] = {5, 3, 8, 1, 4, 7, 9};
-    for (int i = 0; i < list->size; i++)
+    for (int i = 0; i < list_size(list); i++)
     {
         TEST_ASSERT_((int)list_get(list, i) == expected[i], "List data is not expected");
     }
@@ -151,10 +151,10 @@ void dfs_extra()
 
     List *list = tree_dfs(tree);
     TEST_ASSERT_(list != NULL, "List is NULL");
-    TEST_ASSERT_(list->size == 7, "List size is not 7");
+    TEST_ASSERT_(list_size(list) == 7, "List size is not 7");
 
     int expected[7] = {5, 3, 1, 4, 8, 7, 9};
-    for (int i = 0; i < list->size; i++)
+    for (int i = 0; i < list_size(list); i++)
     {
         TEST_ASSERT_((int)list_get(list, i) == expected[i], "List data is not expected");
     }

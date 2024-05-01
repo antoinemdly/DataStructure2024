@@ -27,9 +27,16 @@ Registry *registry_create(Customer **customers, int size){
 }
 
 void car_destroy(Car *car){
+    free(car->brand);
+    free(car->license);
+    free(car->model);
+
     free(car);
 }
 void customer_destroy(Customer *customer){
+    free(customer->name);
+    free(customer->address);
+    customer->car = NULL;
     free(customer);
 }
 void registry_destroy(Registry *registry){
