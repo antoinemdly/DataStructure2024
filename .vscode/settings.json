@@ -24,6 +24,7 @@
         "stdio.h": "c",
         "__hash_table": "c",
         "__split_buffer": "c",
-        "bitset": "c"
+        "bitset": "c",
+        "math.h": "c"
     }
 }
